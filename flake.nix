@@ -28,7 +28,7 @@
         "pythoneda-shared-pythoneda-banner";
       inputs.pythoneda-shared-pythoneda-domain.follows =
         "pythoneda-shared-pythoneda-domain";
-      url = "github:pythoneda-shared-artifact-def/shared/0.0.15";
+      url = "github:pythoneda-shared-artifact-def/shared/0.0.16";
     };
     pythoneda-shared-pythoneda-banner = {
       inputs.nixos.follows = "nixos";
