@@ -1,5 +1,32 @@
 {
   "nodes": {
+    "esdbclient": {
+      "inputs": {
+        "flake-utils": [
+          "pythoneda-shared-pythoneda-infrastructure",
+          "flake-utils"
+        ],
+        "nixos": [
+          "pythoneda-shared-pythoneda-infrastructure",
+          "nixos"
+        ]
+      },
+      "locked": {
+        "dir": "esdbclient",
+        "lastModified": 1704916821,
+        "narHash": "sha256-hyojfile5zbJMmKs7Egq2m9cmuRdZuq6j4qQ9mN5y7s=",
+        "owner": "rydnr",
+        "repo": "nix-flakes",
+        "rev": "20cb6c228e12a689c0fc9776b7aecb8b4528fbbe",
+        "type": "github"
+      },
+      "original": {
+        "dir": "esdbclient",
+        "owner": "rydnr",
+        "repo": "nix-flakes",
+        "type": "github"
+      }
+    },
     "flake-utils": {
       "locked": {
         "lastModified": 1652776076,
@@ -260,6 +287,7 @@
     },
     "pythoneda-shared-pythoneda-infrastructure": {
       "inputs": {
+        "esdbclient": "esdbclient",
         "flake-utils": [
           "flake-utils"
         ],
@@ -274,16 +302,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1705000547,
-        "narHash": "sha256-h9j0Q9O4Q81184iYIrNJ/N7uVW1E0PW1/TBHkOKQKhE=",
+        "lastModified": 1705126333,
+        "narHash": "sha256-Fh73Y8/7N2y2LvFq20V7MrXTJkknnlD5wbP60fR4JpE=",
         "owner": "pythoneda-shared-pythoneda-def",
         "repo": "infrastructure",
-        "rev": "edbb88d01d2b31a0aa566f2bd18cf741b60e8419",
+        "rev": "a245ca0e0b1023b238115df3a53df0558a5f94c5",
         "type": "github"
       },
       "original": {
         "owner": "pythoneda-shared-pythoneda-def",
-        "ref": "0.0.17",
+        "ref": "0.0.18",
         "repo": "infrastructure",
         "type": "github"
       }
