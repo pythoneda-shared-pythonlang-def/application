@@ -28,7 +28,7 @@
         "pythoneda-shared-pythoneda-banner";
       inputs.pythoneda-shared-pythoneda-domain.follows =
         "pythoneda-shared-pythoneda-domain";
-      url = "github:pythoneda-shared-artifact-def/shared/0.0.31";
+      url = "github:pythoneda-shared-artifact-def/shared/0.0.32";
     };
     pythoneda-shared-pythoneda-banner = {
       inputs.nixos.follows = "nixos";
@@ -49,7 +49,7 @@
         "pythoneda-shared-pythoneda-banner";
       inputs.pythoneda-shared-pythoneda-domain.follows =
         "pythoneda-shared-pythoneda-domain";
-      url = "github:pythoneda-shared-pythoneda-def/infrastructure/0.0.18";
+      url = "github:pythoneda-shared-pythoneda-def/infrastructure/0.0.19";
     };
   };
   outputs = inputs:
@@ -58,8 +58,8 @@
       let
         org = "pythoneda-shared-pythoneda";
         repo = "application";
-        version = "0.0.33";
-        sha256 = "1slwlja38c1bfjj5if9n99bd2g90vxszb9ly58gcgfgy7lx70qd8";
+        version = "0.0.35";
+        sha256 = "1d03nm93hb4ypj1a8hhgs9zmkfl0jid4p7zdd3s1lzcwzd81j3dy";
         pname = "${org}-${repo}";
         pythonpackage = "pythoneda.application";
         pkgs = import nixos { inherit system; };
