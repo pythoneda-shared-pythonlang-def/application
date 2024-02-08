@@ -1,6 +1,6 @@
 # Application
 
-Definition for [pythoneda-shared-pythoneda](https://github.com/pythoneda-shared-pythoneda "pythoneda-shared-pythoneda")/[application](https://github.com/pythoneda-shared-pythoneda/application "application").
+Definition for [https://github.com/pythoneda-shared-pythonlang](pythoneda-shared-pythonlang "pythoneda-shared-pythonlang")/[https://github.com/pythoneda-shared-pythonlang/application](application "application").
 
 ## How to declare it in your flake
 
@@ -11,10 +11,10 @@ Check the latest tag of this repository, and use it instead of the `[version]` p
   description = "[..]";
   inputs = rec {
     [..]
-    pythoneda-shared-pythoneda-application = {
+    pythoneda-shared-pythonlang-application = {
       [optional follows]
       url =
-        "github:pythoneda-shared-pythoneda-def/application/[version]";
+        "github:pythoneda-shared-pythonlang-def/application/[version]";
     };
   };
   outputs = [..]
@@ -25,7 +25,7 @@ Should you use another PythonEDA modules, you might want to pin those also used 
 
 Use the specific package depending on your system (one of `flake-utils.lib.defaultSystems`) and Python version:
 
-- `#packages.[system].pythoneda-shared-pythoneda-application-python38` 
-- `#packages.[system].pythoneda-shared-pythoneda-application-python39` 
-- `#packages.[system].pythoneda-shared-pythoneda-application-python310` 
-- `#packages.[system].pythoneda-shared-pythoneda-application-python311`
+- `#packages.[system].pythoneda-shared-pythonlang-application-python38` 
+- `#packages.[system].pythoneda-shared-pythonlang-application-python39` 
+- `#packages.[system].pythoneda-shared-pythonlang-application-python310` 
+- `#packages.[system].pythoneda-shared-pythonlang-application-python311`

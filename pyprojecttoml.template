@@ -1,8 +1,8 @@
 # application/pyprojecttoml.template
 #
-# This file is the template for pythoneda-shared/application's pyproject.toml
+# This file is the template for pythoneda-shared-pythonlang/application's pyproject.toml
 #
-# Copyright (C) 2023-today rydnr's pythoneda-shared/application-artifact
+# Copyright (C) 2023-today rydnr's pythoneda-shared-pythonlang-def/application
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -28,9 +28,9 @@ packages = [{include = "@package@"}]
 [tool.poetry.dependencies]
 python = "^@pythonMajorMinorVersion@"
 pythoneda-shared-artifact-shared = "^@pythonedaSharedArtifactShared@"
-pythoneda-shared-banner = "^@pythonedaSharedBanner@"
-pythoneda-shared-domain = "^@pythonedaSharedDomain@"
-pythoneda-shared-infrastructure = "^@pythonedaSharedInfrastructure@"
+pythoneda-shared-pythonlang-banner = "^@pythonedaSharedPythonlangBanner@"
+pythoneda-shared-pythonlang-domain = "^@pythonedaSharedPythonlangDomain@"
+pythoneda-shared-pythonlang-infrastructure = "^@pythonedaSharedPythonlangInfrastructure@"
 
 [build-system]
 requires = ["poetry-core"]
