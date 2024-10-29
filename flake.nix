@@ -58,8 +58,8 @@
       let
         org = "pythoneda-shared-pythonlang";
         repo = "application";
-        version = "0.0.46";
-        sha256 = "095gsw39aclg40r4zjywil1m50yqc9nl7z761089ncj4p0lpznvh";
+        version = "0.0.47";
+        sha256 = "00vajhl22d6fhkfnj203ry6wvnafzmppwj46bax7rw3pbc1bsdz5";
         pname = "${org}-${repo}";
         pythonpackage = "pythoneda.shared.application";
         pkgs = import nixos { inherit system; };
