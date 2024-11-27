@@ -28,19 +28,19 @@
         "pythoneda-shared-pythonlang-banner";
       inputs.pythoneda-shared-pythonlang-domain.follows =
         "pythoneda-shared-pythonlang-domain";
-      url = "github:pythoneda-shared-artifact-def/shared/0.0.73";
+      url = "github:pythoneda-shared-artifact-def/shared/0.0.74";
     };
     pythoneda-shared-pythonlang-banner = {
       inputs.nixos.follows = "nixos";
       inputs.flake-utils.follows = "flake-utils";
-      url = "github:pythoneda-shared-pythonlang-def/banner/0.0.69";
+      url = "github:pythoneda-shared-pythonlang-def/banner/0.0.70";
     };
     pythoneda-shared-pythonlang-domain = {
       inputs.flake-utils.follows = "flake-utils";
       inputs.nixos.follows = "nixos";
       inputs.pythoneda-shared-pythonlang-banner.follows =
         "pythoneda-shared-pythonlang-banner";
-      url = "github:pythoneda-shared-pythonlang-def/domain/0.0.86";
+      url = "github:pythoneda-shared-pythonlang-def/domain/0.0.88";
     };
     pythoneda-shared-pythonlang-infrastructure = {
       inputs.flake-utils.follows = "flake-utils";
@@ -49,7 +49,7 @@
         "pythoneda-shared-pythonlang-banner";
       inputs.pythoneda-shared-pythonlang-domain.follows =
         "pythoneda-shared-pythonlang-domain";
-      url = "github:pythoneda-shared-pythonlang-def/infrastructure/0.0.63";
+      url = "github:pythoneda-shared-pythonlang-def/infrastructure/0.0.64";
     };
   };
   outputs = inputs:
@@ -58,8 +58,8 @@
       let
         org = "pythoneda-shared-pythonlang";
         repo = "application";
-        version = "0.0.48";
-        sha256 = "1kfqyp71gfqi30h4h8hjv1a4a6z0zhv7zxgnk13vyid66a1h4gs7";
+        version = "0.0.49";
+        sha256 = "17204v68xw309s3j3c7hzn9s8dwv8dp5gks6hlpdpvrj9nyd8v4j";
         pname = "${org}-${repo}";
         pythonpackage = "pythoneda.shared.application";
         pkgs = import nixos { inherit system; };
