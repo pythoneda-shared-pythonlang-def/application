@@ -28,19 +28,19 @@
         "pythoneda-shared-pythonlang-banner";
       inputs.pythoneda-shared-pythonlang-domain.follows =
         "pythoneda-shared-pythonlang-domain";
-      url = "github:pythoneda-shared-artifact-def/shared/0.0.82";
+      url = "github:pythoneda-shared-artifact-def/shared/0.0.84";
     };
     pythoneda-shared-pythonlang-banner = {
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.flake-utils.follows = "flake-utils";
-      url = "github:pythoneda-shared-pythonlang-def/banner/0.0.72";
+      url = "github:pythoneda-shared-pythonlang-def/banner/0.0.74";
     };
     pythoneda-shared-pythonlang-domain = {
       inputs.flake-utils.follows = "flake-utils";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.pythoneda-shared-pythonlang-banner.follows =
         "pythoneda-shared-pythonlang-banner";
-      url = "github:pythoneda-shared-pythonlang-def/domain/0.0.96";
+      url = "github:pythoneda-shared-pythonlang-def/domain/0.0.98";
     };
     pythoneda-shared-pythonlang-infrastructure = {
       inputs.flake-utils.follows = "flake-utils";
@@ -49,7 +49,7 @@
         "pythoneda-shared-pythonlang-banner";
       inputs.pythoneda-shared-pythonlang-domain.follows =
         "pythoneda-shared-pythonlang-domain";
-      url = "github:pythoneda-shared-pythonlang-def/infrastructure/0.0.72";
+      url = "github:pythoneda-shared-pythonlang-def/infrastructure/0.0.75";
     };
   };
   outputs = inputs:
@@ -62,6 +62,7 @@
         sha256 = "0cm8rra4ky41k5xnk9w203mgfb0d7hwdpw8xyqvdadl83ynal6b6";
         pname = "${org}-${repo}";
         pythonpackage = "pythoneda.shared.application";
+        package = builtins.replaceStrings [ "." ] [ "/" ] pythonpackage;
         pkgs = import nixpkgs { inherit system; };
         description = "Application layer for PythonEDA applications";
         license = pkgs.lib.licenses.gpl3;
@@ -97,7 +98,6 @@
               desc = description;
               inherit homepage pname pythonMajorMinorVersion package
                 version;
-              package = builtins.replaceStrings [ "." ] [ "/" ] pythonpackage;
               pythonedaSharedArtifactShared =
                 pythoneda-shared-artifact-shared.version;
               pythonedaSharedPythonlangBanner =
